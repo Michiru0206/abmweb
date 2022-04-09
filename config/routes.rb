@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'home/index'
   devise_for :users
   # route routing 
   root to: "todos#index"
