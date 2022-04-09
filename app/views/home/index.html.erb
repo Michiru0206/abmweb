@@ -1,2 +1,8 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Welcome to ABM</h1>
+<!--- go to sign up page --->
+<%= link_to 'Sign Up', '/users/sign_up'%><br />
+
+<!--- go to sign in page --->
+<%= link_to 'Sign In', '/users/sign_in'%><br />
+<!--- log out --->
+<%= link_to 'Log Out', destroy_user_session_path, method: :delete%>
