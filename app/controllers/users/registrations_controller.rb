@@ -51,6 +51,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   #The path used after sign up.
+  # Redirect to todos index page instead of root route
   def after_sign_up_path_for(resource)
     todos_index_path
   end
