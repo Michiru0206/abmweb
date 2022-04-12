@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @task.task %></h1>
+  <p class="lead">
+    <strong>Status:</strong> <%= @task.status %> | <strong>Due:</strong><%= @task.due %>
+  </p>
+  <p class="lead">
+    <%= link_to 'Edit', edit_task_path(@task), class: "btn btn-secondary"%>
+    <%= link_to 'Back', tasks_path, class: "btn btn-secondary" %>
+  </p>
+</div>
+
+<p> 
+  <strong>Task:</strong>
+  <%= @task.task %>
+</p>
+
+<p> 
+  <strong>Status:</strong>
+  <%= @task.status %> 
+</p>
+
+<p> 
+  <strong>Due:</strong>
+  <%= @task.due %>
+</p>

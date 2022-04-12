@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :tasks
   devise_for :users, controllers: {
     passwords: 'users/passwords',
     registrations: 'users/registrations',
@@ -12,6 +13,10 @@ Rails.application.routes.draw do
   get 'diary/index'
   get 'todos/index'
   get 'home/index'
+  get 'todos/new'
+  get 'home/diary'
+
+  resources :todos
   
   #get '/sign_in', to: 'todos#index'
   
