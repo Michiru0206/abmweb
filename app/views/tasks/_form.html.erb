@@ -11,22 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :task %>
-    <%= form.text_field :task %>
+  <div class="field form-group">
+    <%= form.text_field :task, class: "form-control", placeholder: "New task" %>
   </div>
 
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.text_field :status %>
+  <br/>
+
+  <div class="field, form-group">
+    <%= form.text_field :status, class: "form-control", placeholder: "Status" %>
   </div>
 
-  <div class="field">
+  <br/>
+
+  <div class="field, form-group">
     <%= form.label :due %>
-    <%= form.date_select :due %>
+    <%= form.date_select :due, class: "form-control" %>
   </div>
-
+    <br/>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-success' %>
   </div>
 <% end %>
