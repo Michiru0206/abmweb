@@ -3,7 +3,7 @@ class TasksController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   # GET /tasks or /tasks.json
   def index
-    @tasks = Task.all
+    @tasks = Task.order('due').all
   end
 
   # GET /tasks/1 or /tasks/1.json
