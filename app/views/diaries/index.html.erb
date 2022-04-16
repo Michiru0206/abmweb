@@ -1,0 +1,19 @@
+<h1>Diaries</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @diaries.each do |diary| %>
+      <tr>
+        <td><%= diary.writing_date %></td>
+        <td><%= diary.title %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "Write Today's Diary", new_diary_path %>
