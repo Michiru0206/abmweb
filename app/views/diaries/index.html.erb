@@ -10,7 +10,9 @@
     <% @diaries.each do |diary| %>
       <tr>
         <td><%= diary.writing_date %></td>
-        <td><%= diary.title %></td>
+        <td><%= link_to diary.title, "diaries/#{diary.id}" %></td>
+        <td><%= link_to 'Edit', edit_diary_path(diary)%></td>
+        <td><%= link_to 'Delete', diary_path(diary), method: :delete %></td>
       </tr>
     <% end %>
   </tbody>
