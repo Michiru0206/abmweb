@@ -2,13 +2,9 @@
 
 <html>
 <head>
+<link rel="stylesheet" href="tasks.scss">
 <meta charset = "utf-8">
 <title>ABM Web - Todo List</title>
-<style>
-  body{
-    font-family: "Optima";
-  }
-</style>
 </head>
 
 <body>
@@ -43,5 +39,6 @@
 <!--- log out --->
 <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class:"btn btn-warning"%>
 </body>
+
 
 </html>
