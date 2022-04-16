@@ -1,0 +1,8 @@
+<h1><%= @diary.title%></h1>
+<h3>Date: <%= @diary.writing_date%></h3>
+
+<p class="content-wrap">
+    <%= @diary.content%>
+</p>
+
+<%= link_to 'Back', diaries_path%>
