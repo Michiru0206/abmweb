@@ -9,7 +9,13 @@
         background-image: url("<%= asset_path('homepic.png') %>");
         background-repeat: no-repeat;
         background-size: cover;
+        padding-bottom: 100px;
         font-family: "Optima";
+    }
+
+    .content-wrap{
+        max-width: 800px;
+        width: 85%;
     }
 
     .welcome-msg{
@@ -19,12 +25,13 @@
     }
 
     .buttons{
-        margin-left: 350pt;
         display: flex;
+        justify-content: center;
     }
-    
-    .button-sign-up{
-        margin-right: 90pt;
+
+    .button{
+        display: inline-block;
+        margin: 20px 50px;
     }
 
     h1{
@@ -42,23 +49,25 @@
 </head>
 
 <body>
-    <div class = 'welcome-msg'>
-        <h1>Welcome to ABM</h1>
-        <h2>Let's Organize Your Day with Us!</h2>
-    </div>
-
-    <div class = 'buttons'>
-        <div class = 'button-sign-up'>
-            <!--- go to sign up page --->
-            <%= link_to ('/users/sign_up') do %>
-                <button class = "btn btn-secondary btn-lg">Sign Up</button>
-            <%end%>
+    <div content-wrap>
+        <div class = 'welcome-msg'>
+            <h1>Welcome to ABM</h1>
+            <h2>Let's Organize Your Day with Us!</h2>
         </div>
-        <div class = 'button-sign-in'>
-            <!--- go to sign in page --->
-            <%= link_to ('/users/sign_in') do %>
-                <button class = "btn btn-secondary btn-lg">Sign In</button>
-            <%end%>
+
+        <div class = 'buttons'>
+            <div class = 'button'>
+                <!--- go to sign up page --->
+                <%= link_to ('/users/sign_up') do %>
+                    <button class = "btn btn-secondary btn-lg">Sign Up</button>
+                <%end%>
+            </div>
+            <div class = 'button'>
+                <!--- go to sign in page --->
+                <%= link_to ('/users/sign_in') do %>
+                    <button class = "btn btn-secondary btn-lg">Sign In</button>
+                <%end%>
+            </div>
         </div>
     </div>
 
