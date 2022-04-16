@@ -5,7 +5,18 @@
 <link rel="stylesheet" href="tasks.scss">
 <meta charset = "utf-8">
 <title>ABM Web - Todo List</title>
+<style>
+.button{
+  position: relative;
+  top: 10px;
+  left: 1070px;
+}
+</style>
 </head>
+
+<header>
+  <h1>Todo List</h1>
+</header>
 
 <body>
 <table class = "table table-striped table-bordered table-hover">   <!-- table striped not working -->
@@ -33,11 +44,12 @@
 </table>
 
 <br>
+<div class = "button">
+  <%= link_to 'New Task', new_task_path, class:"btn btn-secondary" %>
 
-<%= link_to 'New Task', new_task_path, class:"btn btn-secondary" %>
-
-<!--- log out --->
-<%= link_to 'Log Out', destroy_user_session_path, method: :delete, class:"btn btn-primary"%>
+  <!--- log out --->
+  <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class:"btn btn-primary"%>
+</div>
 </body>
 
 
