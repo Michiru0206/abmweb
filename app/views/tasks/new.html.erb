@@ -7,6 +7,10 @@
     body{
         font-family: "Optima";
     }
+
+    h1{
+        font-size: 60px;
+    }
 </style>
 </head>
 
@@ -16,7 +20,7 @@
 
 <%= render 'form', task: @task %>
 <br>
-<%= link_to 'Back', tasks_path, class: "btn btn-dark" %>
+<%= link_to 'Back', tasks_path, class: "btn btn-secondary" %>
 </body>
 
 </html>

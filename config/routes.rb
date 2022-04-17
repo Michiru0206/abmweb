@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  resources :diaries
   resources :tasks
   devise_for :users, controllers: {
     passwords: 'users/passwords',
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # route routing 
   root to: "home#index"
 
-  get 'diary/index'
+  get 'diaries/index'
   get 'todos/index'
   get 'home/index'
   get 'todos/new'
@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   resources :todos
   
-  #get '/sign_in', to: 'todos#index'
+
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

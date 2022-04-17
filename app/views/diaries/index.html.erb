@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>ABM Web - Diary</title>
+<style>
+table{
+    position: relative;
+    top: 20px;
+}
+
+.button{
+    position: relative;
+    top: 10px;
+    left: 1040px;
+}
+</style>
+</head>
+
+<header>
+    <h1>Diary</h1>
+    <div class = "button">
+        <%= link_to new_diary_path do%>
+            <button class = "btn btn-secondary btn-lg">Write Today's Diary</button>
+        <% end %>
+    </div>
+</header>
+
+<body>
+    <table class = "table table-striped table-bordered table-hover">
+    <thead class = "table-dark">
+        <tr>
+        <th>Date</th>
+        <th>Title</th>
+        <th colspan="2"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @diaries.each do |diary| %>
+        <tr>
+            <td><%= diary.writing_date %></td>
+            <td><%= link_to diary.title, "diaries/#{diary.id}" %></td>
+            <td><%= link_to 'Edit', edit_diary_path(diary)%></td>
+            <td><%= link_to 'Delete', diary_path(diary), method: :delete, data: { confirm: 'Are you sure?' }%></td>
+        </tr>
+        <% end %>
+    </tbody>
+    </table>
+</body>
+</html>
