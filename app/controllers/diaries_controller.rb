@@ -1,4 +1,6 @@
 class DiariesController < ApplicationController
+  # before_action :set_diaries, only: [:show, :edit, :update]
+  # before_action :authenticate_user!, except: [:index ]
   def index
     @diaries = Diary.all
   end
