@@ -7,7 +7,22 @@
 <head>
 <meta charset = "utf-8">
 <title>ABM Web - Diary</title>
+<style>
+header{
+    position: relative;
+}
+.button1{
+    position: absolute;
+    display: inline-block;
+    margin-top: 15px;
+    right: 0%;
+}
 
+.button2{
+    margin-top: auto;
+}
+
+</style>
 </head>
 
 <header>
@@ -20,30 +35,32 @@
 </header>
 
 <body>
-    <table class = "table table-striped table-bordered table-hover">
-    <thead class = "table-dark">
-        <tr>
-        <th>Date</th>
-        <th>Title</th>
-        <!-- <th>User Id</th> -->
-        <th colspan="2"></th>
-        </tr>
-    </thead>
-    <tbody>
-        <% @diaries.each do |diary| %>
-        <tr>
-            <td><%= diary.writing_date %></td>
-            <td><%= link_to diary.title, "diaries/#{diary.id}" %></td>
-            <td><%= link_to 'Edit', edit_diary_path(diary)%></td>
-            <td><%= link_to 'Delete', diary_path(diary), method: :delete, data: { confirm: 'Are you sure?' }%></td>
-        </tr>
-        <% end %>
-    </tbody>
-    </table>
+    <div content-wrapper>
+        <table class = "table table-striped table-bordered table-hover">
+        <thead class = "table-dark">
+            <tr>
+            <th>Date</th>
+            <th>Title</th>
+            <!-- <th>User Id</th> -->
+            <th colspan="2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @diaries.each do |diary| %>
+            <tr>
+                <td><%= diary.writing_date %></td>
+                <td><%= link_to diary.title, "diaries/#{diary.id}" %></td>
+                <td><%= link_to 'Edit', edit_diary_path(diary)%></td>
+                <td><%= link_to 'Delete', diary_path(diary), method: :delete, data: { confirm: 'Are you sure?' }%></td>
+            </tr>
+            <% end %>
+        </tbody>
+        </table>
 
-    <div class = "button2">
-    <!--- log out --->
-    <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class:"btn btn-primary"%>
+        <div class = "button2">
+        <!--- log out --->
+        <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class:"btn btn-primary"%>
+        </div>
     </div>
 </body>
 </html>
