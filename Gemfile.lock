@@ -243,6 +243,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   devise
+  factory_bot_rails (~> 6.2.0)
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mysql2 (~> 0.5)
