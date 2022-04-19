@@ -1,3 +1,61 @@
 // Place all the styles related to the Diaries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body{
+    background-image: image-url('homepic.png');
+    background-repeat: no-repeat;
+    background-image: bottom right;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Optima";
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    color:#D4F1FF;
+}
+
+table{
+    position: relative;
+    top: 20px;
+}
+
+.button1{
+    display: relative;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.button2{
+    display: relative;
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+// .button{
+//     position: relative;
+//     top: 10px;
+//     left: 1040px;
+// }
+
+/* Responsive (for tablet) */
+@media all and (max-width: 1000px){
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+}
+
+/* Responsive (for mobile) */
+@media all and (max-width: 670px){
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px
+    }
+}
