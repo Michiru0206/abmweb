@@ -3,7 +3,6 @@ class DiariesController < ApplicationController
   # before_action :authenticate_user!, except: [:index ]
   def index
     @diaries = current_user.diaries
-    #@diaries = Diary.all
   end
 
   def new
@@ -13,32 +12,27 @@ class DiariesController < ApplicationController
   def create
     @diary = current_user.diaries.new(diary_params)
     @diary.save!
-    #@diary = Diary.create(diary_params)
     redirect_to diaries_path
   end
 
   def edit
     @diary = target_diary params[:id]
-    #@diary = Diary.find(params[:id])
   end
 
   def update
     @diary = target_diary params[:id]
-    #@diary = Diary.find(params[:id])
     @diary.update(diary_params)
     redirect_to diaries_path
   end
 
   def destroy
     @diary = target_diary params[:id]
-    #@diary = Diary.find(params[:id])
     @diary.destroy
     redirect_to diaries_path
   end
 
   def show
     @diary = target_diary params[:id]
-    #@diary = Diary.find(params[:id])
   end
 
   private
