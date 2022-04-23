@@ -2,8 +2,10 @@
 
 one:
   writing_date: 2022-04-15
-  title: MyString
+  title: Test Diary
+  content: This is a test.
 
 two:
   writing_date: 2022-04-15
   title: MyString
+  content: This is a second test.
