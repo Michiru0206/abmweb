@@ -6,7 +6,7 @@ This is a Ruby on Rails web site where users can create their own todo list and 
 
 From the college students' perspectives, we implemented not only the todo list but also the diary to our web app. We hope to support busy college students' academic part of the life as well as their mental health. 
 
-![abmweb home](images/top-page.png)
+![abmweb home](app/assets/images/top-page.png)
 
 Things you may want to cover:
 
