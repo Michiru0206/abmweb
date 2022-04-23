@@ -9,8 +9,9 @@ RSpec.describe 'Sign up to use the app', type: :system do
     scenario 'User can add new task' do
         # User sign in 
         sign_in @user
-        # Go to new task page
+        # Go to task page
         visit tasks_path
+        # Click the button and redirect to new task page
         click_on 'New Task', match: :first
         visit new_task_path
         # Fill in all the info to create a new task
