@@ -56,3 +56,11 @@ You are almost there! In order to start using our web app, you need to create yo
 3. Enter your email and password. Make sure that your password has at least 6 characters. 
 4. Confirm your password and sign up
 5. You are all set! Enjoy ABM Web! 
+
+## Authors
+Michiru Nozawa
+Annah Nyaradzo Mutaya
+Bobi Arce Mack
+
+## The last update
+April 23, 2022
