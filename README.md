@@ -58,9 +58,9 @@ You are almost there! In order to start using our web app, you need to create yo
 5. You are all set! Enjoy ABM Web! 
 
 ## Authors
-Michiru Nozawa
-Annah Nyaradzo Mutaya
-Bobi Arce Mack
+- Michiru Nozawa
+- Annah Nyaradzo Mutaya
+- Bobi Arce Mack
 
 ## The last update
 April 23, 2022
