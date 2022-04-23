@@ -48,3 +48,11 @@ Following steps explains how to set the your development environment. Please kee
     - Launch the server by using `rails s` or `rails server` in the terminal
     - Open **localhost:3000** in your choice of browser
     - App is successfully running if you see the top page of ABM Web which has sign up/sign in buttons. 
+
+## After Set Up
+You are almost there! In order to start using our web app, you need to create your account. 
+1. Open **localhost:3000** in your browser
+2. Click **Sign Up** button 
+3. Enter your email and password. Make sure that your password has at least 6 characters. 
+4. Confirm your password and sign up
+5. You are all set! Enjoy ABM Web! 
