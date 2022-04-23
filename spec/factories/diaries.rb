@@ -5,6 +5,5 @@ FactoryBot.define do
         title {' Test Diary '}
         content { 'This is a test diary.' }
 
-        #association :user
     end
 end
