@@ -9,8 +9,10 @@ RSpec.describe 'Sign in and create diary', type: :system do
     scenario 'User can acceess diary page' do
         # User sign in
         sign_in @user
+        # visit task page and click diary on navigation bar
         visit tasks_path
         click_on 'Diary'
+        # Test - redirect to diary page
         expect(current_path).to eq(diaries_path)
     end
 
