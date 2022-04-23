@@ -28,11 +28,11 @@ Following steps explains how to set the your development environment. Please kee
         * [Install MySQL 8](https://dev.mysql.com/downloads/mysql)
         * [Install Ruby 3.1.1](https://mac.install.guide/ruby/index.html)
 
-    Check your version of Ruby before you go to the next step. On the terminal, change directory (`cd abmweb`) and then do `ruby -v`. 
+    Check your version of Ruby before you go to the next step. On the terminal, change directory (`cd abmweb`) and then do `ruby -v`. You should have Ruby 3.1.1.
 
 3. Install essential gems
     - Disable gem docs
-    - Install Rails 6.1.5 
+    - Install **Rails 6.1.5** 
     - Install MySQL gem
     - Install all the required gems
 
@@ -46,5 +46,5 @@ Following steps explains how to set the your development environment. Please kee
 
 7. Try running app!
     - Launch the server by using `rails s` or `rails server` in the terminal
-    - Open *localhost:3000* in your choice of browser
+    - Open **localhost:3000** in your choice of browser
     - App is successfully running if you see the top page of ABM Web which has sign up/sign in buttons. 
