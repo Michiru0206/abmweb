@@ -20,4 +20,13 @@ RSpec.describe 'Sign up to use the app', type: :system do
         #Test - click the button and the number of task increases by one
         expect { click_on 'Create Task' }.to change(Task, :count).by(1)
     end
+
+    scenario 'User can access add new task page via navigation bar' do
+        # User sign in
+        sign_in @user
+        # Click button on navigation bar
+        visit root_path
+        click_on 'Add task', match: :first
+        expect(current_path).to eq(new_task_path)
+    end
 end
