@@ -1,11 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  task: MyString
-  status: MyString
+  task: Assignment 1
+  status: Working
   due: 2022-04-11
+  user_id: 1
 
 two:
-  task: MyString
-  status: MyString
+  task: Assignment 2
+  status: Not Started
   due: 2022-04-11
+  user_id: 1
