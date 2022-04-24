@@ -17,14 +17,25 @@ h3{
 }
 
 .content-wrap{
+    position: relative;
     text-align: justify;
+    /* text-align-last: center; */
     margin: 20px auto;
+    font-size: 20px;
+}
+
+footer{
+    width: 85%;
+    position: relative;
 }
 
 .button{
-    position: relative;
-    top: 20px;
-    left: 1000px;
+    display: block;
+    position: absolute;
+    margin-top: auto;
+    right: 0%;
+    
+    
 }
 
 </style>
@@ -39,13 +50,14 @@ h3{
     <p class="content-wrap">
         <%= @diary.content%>
     </p>
-    
-    <div class = "button">
-        <%= link_to diaries_path do%>
-            <button class = "btn btn-secondary">Back</button>
-        <% end %>
-    </div>
-
 </body>
+
+<footer>
+    <div class = "button">
+            <%= link_to diaries_path do%>
+                <button class = "btn btn-secondary">Back</button>
+            <% end %>
+    </div>
+</footer>
 
 </html>
