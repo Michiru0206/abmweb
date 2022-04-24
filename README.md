@@ -19,32 +19,32 @@ Before using our web app, make sure that you have installed Ruby on Rails to you
 ## General Configuration
 Following steps explains how to set the your development environment. Please keep a log so that you can go back anytime you confront errors. 
 
-1. Fork and Clone abmweb repo
+1. **Fork and Clone abmweb repo**
     - Visit ABM Web GitHub page and click fork at the top right of the page. 
     - Create local copy of your fork with: `git clone https://github.com/<username>/abmweb.git`
 
-2. Install MySQL 8 and Ruby 3.1.1 
+2. **Install MySQL 8 and Ruby 3.1.1**
     - Mac Users: 
         * [Install MySQL 8](https://dev.mysql.com/downloads/mysql)
         * [Install Ruby 3.1.1](https://mac.install.guide/ruby/index.html)
 
     Check your version of Ruby before you go to the next step. On the terminal, change directory (`cd abmweb`) and then do `ruby -v`. You should have Ruby 3.1.1.
 
-3. Install essential gems
+3. **Install essential gems**
     - Disable gem docs
     - Install **Rails 6.1.5** 
     - Install MySQL gem
     - Install all the required gems
 
-4. Configure database environment variables
+4. **Configure database environment variables**
 
-5. Prepare database in MySQL
+5. **Prepare database in MySQL**
     - In the terminal, run `rake db:create`
 
-6. Run database migrations
+6. **Run database migrations**
     - In the terminal, run `rake db:migrate`
 
-7. Try running app!
+7. **Try running app!**
     - Launch the server by using `rails s` or `rails server` in the terminal
     - Open **localhost:3000** in your choice of browser
     - App is successfully running if you see the top page of ABM Web which has sign up/sign in buttons. 
