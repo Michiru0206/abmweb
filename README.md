@@ -36,9 +36,9 @@ Following steps explains how to set the your development environment. Please kee
     - Install MySQL gem
     - Install all the required gems
 
-4. Configure database encironment variables
+4. Configure database environment variables
 
-5. Prepare databse in MySQL
+5. Prepare database in MySQL
     - In the terminal, run `rake db:create`
 
 6. Run database migrations
