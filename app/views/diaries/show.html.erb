@@ -29,34 +29,47 @@ footer{
     position: relative;
 }
 
+.buttons{
+    display: flex;
+    justify-content: right;
+}
+
 .button{
-    display: block;
-    position: absolute;
+    display: inline-block;
     margin-top: auto;
-    right: 0%;
-    
-    
+    right: 0%; 
 }
 
 </style>
 </head>
 
+<%# Show  diary's title and date that the diary was written%>
 <header>
     <h1><%= @diary.title%></h1>
     <h3><%= @diary.writing_date%></h3>
 </header>
 
+<%# Show content %>
 <body>
     <p class="content-wrap">
         <%= @diary.content%>
     </p>
 </body>
 
-<footer>
-    <div class = "button">
-            <%= link_to diaries_path do%>
-                <button class = "btn btn-secondary">Back</button>
-            <% end %>
+<%# buttons for Edit and Back %>
+<footer> 
+    <div class = "buttons">
+            <div class = "button">
+                <%= link_to edit_diary_path do%>
+                    <button class = "btn btn-secondary">Edit</button>
+                <% end %>
+            </div>
+
+            <div class = "button">
+                <%= link_to diaries_path do%>
+                    <button class = "btn btn-dark">Back</button>
+                <% end %>
+            </div>
     </div>
 </footer>
 
