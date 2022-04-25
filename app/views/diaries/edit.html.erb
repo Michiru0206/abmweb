@@ -1,16 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>ABM Web - Edit Diary</title>
+<style>
+    .form{
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+
+
+<header>
 <h1>Edit Diary</h1>
+</header>
 
-<%= form_for(@diary) do |f|%>
-    <div><%= f.label :writing_date%></div>
-    <div><%= f.date_select :writing_date%></div>
- 
-    <div><%= f.label :title %></div>
-    <div><%= f.text_field :title %></div>
+<body>
+    <div class = "form">
+        <%= form_for(@diary) do |f|%>
+            <div><%= f.label :writing_date%></div>
+            <div><%= f.date_select :writing_date%></div>
+        
+            <div><%= f.label :title %></div>
+            <div><%= f.text_field :title %></div>
 
-    <div><%= f.label :content %></div>
-    <div><%= f.text_area :content, :size => "80x20" %></div>
+            <div><%= f.label :content %></div>
+            <div><%= f.text_area :content, :size => "80x19" %></div>
 
-    <div><%= f.submit %></div>
-<% end %>
-<%= link_to 'Back', diaries_path%>
-    
+            <div><%= f.submit %></div>
+        <% end %>
+    </div>
+    <%= link_to 'Back', diaries_path, class:"btn btn-dark" %>
+    <%# <%= link_to 'Back', diaries_path%>
+</body>
+</html>
