@@ -15,6 +15,7 @@
 <h1>Edit Diary</h1>
 </header>
 
+<%# Diaries info - writing date, title, and content of diary%>
 <body>
     <div class = "form">
         <%= form_for(@diary) do |f|%>
@@ -27,10 +28,10 @@
             <div><%= f.label :content %></div>
             <div><%= f.text_area :content, :size => "80x19" %></div>
 
+            <%# edit diary button %>
             <div><%= f.submit %></div>
         <% end %>
     </div>
     <%= link_to 'Back', diaries_path, class:"btn btn-dark" %>
-    <%# <%= link_to 'Back', diaries_path%>
 </body>
 </html>
