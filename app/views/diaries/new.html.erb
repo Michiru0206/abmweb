@@ -2,20 +2,33 @@
 <html>
 <head>
 <meta charset = "utf-8">
+<style>
+    .form{
+        margin-bottom: 10px;
+    }
+</style>
 </head>
 
-<h1>Today's Diary</h1>
-<%= form_for(@diary) do |f|%>
-    <div><%= f.label :writing_date%></div>
-    <div><%= f.date_select :writing_date%></div>
- 
-    <div><%= f.label :title %></div>
-    <div><%= f.text_field :title %></div>
+<header>
+    <h1>Today's Diary</h1>
+</header>
 
-    <div><%= f.label :content %></div>
-    <div><%= f.text_area :content, :size => "80x20" %></div>
+<body>
+<div class = "form">
+    <%= form_for(@diary) do |f|%>
+        <div><%= f.label :writing_date%></div>
+        <div><%= f.date_select :writing_date%></div>
+    
+        <div><%= f.label :title %></div>
+        <div><%= f.text_field :title %></div>
 
-    <div><%= f.submit %></div>
-<% end %>
-<%= link_to 'Back', diaries_path%>
+        <div><%= f.label :content %></div>
+        <div><%= f.text_area :content, :size => "80x20" %></div>
+
+        <div><%= f.submit %></div>
+    <% end %>
+</div>
+<%= link_to 'Back', diaries_path, class:"btn btn-dark" %>
+</body>
+
 </html>
