@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
-  before_action :set_task, only: %i[ show edit update destroy ]
+  # set what users can see depending on whether they are logged in or not
+  before_action :set_task, only: %i[ show edit update destroy ]      
   before_action :authenticate_user!, except: [:index]
   before_action :correct_user, only: [:edit, :update, :destroyed]
 
